@@ -61,7 +61,7 @@ public class AuthenticationFileRepository
                 if (!line.trim().isEmpty()) {
                     String[] properties = line.split(",");
                     if (properties[0].trim().equalsIgnoreCase(username.trim())) {
-                        return new Customer(properties[0].trim(), properties[1].trim());
+                        return new Customer();
                     }
                 }
             }

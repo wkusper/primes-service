@@ -2,9 +2,11 @@ package com.example.primesservice.rabbitmq;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.stereotype.Component;
 
 import java.text.MessageFormat;
 
+@Component
 public class MQSender {
     private final Queue queue;
 

@@ -13,7 +13,8 @@ public class PrimesController {
    IPrimesService primesService;
 
    private final MQSender mqSender;
-   public PrimesController(IPrimesService primesService, MQSender mqSender) {
+   public PrimesController(IPrimesService primesService,
+                           MQSender mqSender) {
        this.primesService = primesService;
        this.mqSender = mqSender;
    }

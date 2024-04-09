@@ -3,6 +3,9 @@ spring:
     url: jdbc:postgresql://localhost:4003/primes
     username: postgres
     password: password
+  devtools:
+    restart:
+      poll-interval: 2s
 
   jpa:
     hibernate:
@@ -13,5 +16,8 @@ spring:
     init:
       mode: always
 
-server:
-  port: 8085
+  rabbitmq:
+    host: localhost
+    port: 4006
+    username: guest
+    password: guest
